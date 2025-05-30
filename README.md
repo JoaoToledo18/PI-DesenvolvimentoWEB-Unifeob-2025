@@ -134,7 +134,7 @@ http://localhost:4040
 ### Banco de Dados
 
 - Crie o banco de dados no MySQL.
-- Execute o script SQL disponível (caso haja) para criar as tabelas.
+- Execute o script SQL disponível para criar as tabelas.
 
 ---
 
