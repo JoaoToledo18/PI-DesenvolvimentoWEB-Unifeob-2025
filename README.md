@@ -125,7 +125,7 @@ SECRET=chave_secreta
 npm start
 ```
 
-6. Acesse no navegador:
+6. Adicione dentro de FrontEnd/Config/config.js:
 
 ```
 http://localhost:4040
