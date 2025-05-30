@@ -100,7 +100,7 @@ git clone https://github.com/JoaoToledo18/PI-DesenvolvimentoWEB-Unifeob-2025.git
 2. Acesse a pasta do backend:
 
 ```bash
-cd PI-DesenvolvimentoWEB/PI-DesenvolvimentoWEB-Unifeob-2025
+cd PI-DesenvolvimentoWEB/PI-DesenvolvimentoWEB-Unifeob-2025/BackEnd
 ```
 
 3. Instale as dependências:
