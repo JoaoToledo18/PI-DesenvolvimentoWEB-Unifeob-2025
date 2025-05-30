@@ -84,16 +84,16 @@ Funcionalidades principais do frontend:
 
 ### ✅ Pré-requisitos
 
-- Node.js instalado (versão LTS recomendada)
+- Node.js instalado 
 - MySQL instalado
-- Editor de código (sugestão: VS Code)
+- Editor de código
 
 ### 🛠️ Instalação
 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/usuario/repositorio.git
+git clone 
 ```
 
 2. Acesse a pasta do backend:
