@@ -1,0 +1,4 @@
+# node
+node_modules/*
+
+# gnora todos os arquivos dentro da pasta de imagen mas manter a pasta
