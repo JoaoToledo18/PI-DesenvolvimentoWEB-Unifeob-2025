@@ -13,10 +13,10 @@ O objetivo é desenvolver uma aplicação web funcional, aplicando os conhecimen
 
 O projeto integra conceitos das seguintes disciplinas:
 
-- **Integração de Dados:** Modelagem, conexão e manipulação de banco de dados MySQL.
+- **Integração de Dados:** Modelagem, conexão e manipulação de banco de dados MySQL e Data Warehouse.
 - **Tecnologia para Desenvolvimento Web:** Desenvolvimento do backend, APIs REST e funcionalidades.
 - **Desenvolvimento de Interface de Usuários para Web:** Criação de interfaces web com HTML, CSS, JavaScript e Bootstrap.
-- **Computação em Nuvem:** Possível hospedagem e acesso remoto ao sistema.
+- **Computação em Nuvem:**  Hospedagem e acesso remoto ao sistema(AWS).
 
 ---
 
@@ -28,9 +28,10 @@ O backend do projeto foi desenvolvido utilizando **Node.js** e **Express**, send
 
 Funcionalidades principais do backend:
 - API REST estruturada
-- Middleware de autenticação e autorização por cargo (admin, garçom, cozinheiro, caixa)
+- Middleware de autenticação e autorização por cargo (admin, garçom, etc)
 - Integração com banco de dados MySQL
-- Organização modular em controllers, config, middleware e rotas
+- Organização em controllers, config, middleware e rotas
+- Autenticação via JWT
 
 ### 🎨 Frontend
 
@@ -40,7 +41,7 @@ Funcionalidades principais do frontend:
 - Tela inicial com navegação simples
 - Telas de cadastro e login
 - Gerenciamento de produtos, pedidos, mesas, categorias e funcionários
-- Interface adaptada para diferentes tamanhos de tela (responsiva)
+- Interface adaptada para diferentes tamanhos de tela
 
 ---
 
@@ -116,7 +117,7 @@ DB_USER=root
 DB_PASSWORD=sua_senha
 DB_DATABASE=nome_do_banco
 PORT=4040
-SECRET=chave_secreta
+SECRET=chave_secreta // JWT
 ```
 
 5. Execute o servidor:
@@ -134,7 +135,7 @@ http://localhost:4040
 ### Banco de Dados
 
 - Crie o banco de dados no MySQL.
-- Execute o script SQL disponível para criar as tabelas.
+- Execute o script SQL disponível para criar as tabelas (dentro da pasta database).
 
 ---
 
