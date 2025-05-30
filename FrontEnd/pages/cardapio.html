@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio - Imperio's Burger</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cardapio.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <div class="sidebar p-3">
+      <h3 class="text-white">Categorias</h3>
+      <ul id="menu-categorias" class="list-group mt-4"></ul>
+    </div>
+
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="btn btn-primary" id="menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="#" id="imperios-burger"
+          >Imperio's Burger</a
+        >
+      </nav>
+
+      <button class="btn btn-success finalizar-pedido" id="finalizar-pedido">
+        Finalizar Pedido
+      </button>
+
+      <div class="container mt-5">
+        <div id="mensagem-boas-vindas">
+          <h1 class="text-center">Bem-vindo ao Cardápio</h1>
+          <p class="lead text-center mb-4">Escolha uma categoria</p>
+        </div>
+
+        <div id="produtos-container" class="row d-none"></div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="produtoModal"
+      tabindex="-1"
+      aria-labelledby="produtoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="produtoModalLabel">
+              Detalhes do Produto
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img id="produtoModalImg" src="" alt="" class="img-fluid mb-3" />
+            <p id="produtoModalNome"></p>
+            <p id="produtoModalDescr"></p>
+            <p id="produtoModalPreco"></p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" id="btnAdicionarAoCarrinho">
+              Adicionar ao Carrinho
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="finalizarPedidoModal"
+      tabindex="-1"
+      aria-labelledby="finalizarPedidoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="finalizarPedidoModalLabel">
+              Resumo do Pedido
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body" id="resumoPedidoBody"></div>
+          <div class="modal-footer">
+            <button class="btn btn-success" id="confirmarPedido">
+              Finalizar Pedido
+            </button>
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../config/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JS/scriptCardapio.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
