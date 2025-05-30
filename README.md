@@ -158,9 +158,3 @@ http://localhost:4040
 - Pedro de Freitas da Silva
 
 ---
-
-## 📜 Licença
-
-Este projeto é de uso acadêmico, desenvolvido para fins educacionais no Projeto Integrado do módulo **Desenvolvimento Web**.
-
----
